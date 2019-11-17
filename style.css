@@ -1,137 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 
+/*Define some global values to allow easy color change later on*/
+:root{
+  --primary: #1a1a1c;
+  --secondary: #2b2b2e;
+  --lighter: #e1e1e6;
+}
+
 /* Dustin */
 
+/* Header at top of main page */
 .header-format{
-  background-color: #485461;
-  color:#fff;
-  background-image: linear-gradient(180deg, #4c8492 0%, #266086 100%);
-  padding:0px 0;
+  background-color: var(--primary);
+  color: var(--secondary);
+  /*background-image: linear-gradient(180deg, var(--primary) 0%, #b0b0b8 100%);*/
+}
 
+.header-text{
+  color: var(--lighter);
 }
 
 
-.color-light{
-  color:#fff;
-}
 
-/* Drop shadows for all boxes */
-.main-content, .featured, .sub-featured > div, .main-sidebar, .sub-featured, .sub1-img, .sub2-img, .sub3-img {
-  box-shadow:0 0 10px rgba(0,0,0,0.5);
-}
-
-/* --- Skills --- */
-.skills-featured {
-  grid-area:featuredSkills;
-}
-
-.skills-featured ul {
-  padding:10px 0;
-  text-align:center;
-  list-style-type:none;
-}
-
-.skill-logo {
-  padding:10px;
-  margin-right:10px;
-  font-size:56px;
-  display:inline;
-  list-style-type:none;
-}
-
-/* --- Projects --- */
-.sub-featured {
-  grid-area:featuredSub;
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-gap:10px;
-  color:#fff;
-  background-color: #485461;
-  background-image: linear-gradient(315deg, #4c8492 0%, #266086 74%);
-}
-
-.proj-contained{
-  color:#fff;
-  background-color: #9db5db;
-}
-
-.footer{
-    color:#6C8185;
-    text-align:center;
-}
-
-
-.sub-img {
-  margin-right:20px;
-  background:border-box, url(img/ProjectScreenshots/wacktory-screenshot.png)
-  no-repeat center center;
-  background-size:cover;
-}
-
-
-/*end dustin*/
-
-
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-
-  }
-@media (max-width: 768px) {
-  
-}
-@media (max-width: 576px) {
+.navbar .navbar-nav {
+  text-align: center;
+  background-color: var(--secondary);
   
 }
 
+.navbar-custom{
+  background-color: var(--secondary);
+  border: solid;
+  border-color: var(--lighter);
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.navbar-center .inline{
+  display:inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-nav.navbar-center {
+margin-left: auto;
+margin-right: auto;
+display: inline-block;
+left:  0;
+right: 0;
+}
+
+.center{
+  margin: auto;
+  vertical-align: middle;
+}
+
+.carousel-game-main{
+
+  border-radius: 8px;
+  border: 5px solid var(--primary);
+  align-items: center;
+}
+
+.home-container{
+  background-color: var(--secondary);
+  margin-bottom: 20px;
+  border: solid;
+  border-color: var(--lighter);
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.portfolio-container{
+  background-color: var(--secondary);
+  margin-bottom: 20px;
+  border: solid;
+  border-color: var(--lighter);
+  border-top-width: 3px;
+  border-bottom-width: 3px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 
+/* Portfolio */
+.game-title{
+  color: var(--lighter);
+  text-align: center;
+}
 
-/*---Firefox Bug Fix --*/
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/*--- Fixed Background Image --*/
-figure {
-  position: relative;
-  width: 100%;
-  height: 60%;
-  margin: 0!important;
-}
-.fixed-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-#fixed {
-  background-image: url('img/mac.png');
-  position: fixed;
+.center-img-column{
   display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-    padding: 1rem;
+  margin: auto;
+  border: solid;
+  border-color: var(--lighter);
 }
 
+.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 0;
+}
 
-
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 
