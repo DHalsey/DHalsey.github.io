@@ -35,6 +35,8 @@
   border-color: var(--lighter);
   border-left-width: 0px;
   border-right-width: 0px;
+  text-align: center;
+  box-shadow:0px 6px 5px rgba(0,0,0,0.5);
 }
 .navbar-center .inline{
   display:inline-block;
@@ -71,6 +73,7 @@ right: 0;
   border-bottom-width: 0px;
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.5);
 }
 
 .portfolio-container{
@@ -82,6 +85,7 @@ right: 0;
   border-bottom-width: 3px;
   padding-top: 30px;
   padding-bottom: 30px;
+  box-shadow:5px 5px 5px rgba(0,0,0,0.5);
 }
 
 
