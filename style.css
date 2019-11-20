@@ -123,13 +123,13 @@ right: 0;
 
 /**/
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+.img-expand {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {opacity: 0.7;}
+.img-expand:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -165,6 +165,7 @@ right: 0;
   padding: 10px 0;
   height: 150px;
 }
+
 
 /* Add Animation - Zoom in the Modal */
 .modal-content, #caption {

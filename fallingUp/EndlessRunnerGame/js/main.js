@@ -17,7 +17,7 @@ var time; //deltatime
 
 //core game loop
 var mainState = {
-
+	
 	preload: function(){
 		console.log("In Main"); //Debug Message to show we are in mainState
 	},
@@ -59,9 +59,10 @@ var mainState = {
 		player.animations.add('run', [3,7,11,15], 10, true);
 		player.body.velocity.y = pVelocityY
 		player.body.setSize(30,20,-10,5);
-
+		
 		game.sound.stopAll();
 	},
+
 	update: function(){
 		menuTheme.stop();
 		time = game.time.elapsed/1000; //TESTCODE
@@ -83,6 +84,7 @@ var mainState = {
 		}
 		if (!mainTheme.isPlaying) mainTheme.play(); //loops audio
 		pVelocityY = (800+scrollSpeed)*Math.sign(pVelocityY); //scales gravity based upon scroll speed
+
 	}
 
 };

@@ -14,6 +14,8 @@ var loadState = {
 		game.load.image('cloud','assets/img/clouds2.png');
 		game.load.image('platform1','assets/img/platform001.png');
 		game.load.spritesheet('player','assets/img/george.png',48,48);
+
+
 	},
 	update: function(){
 		game.state.start('menu');
@@ -22,8 +24,9 @@ var loadState = {
 
 var menuState = {
 	preload: function(){
-		
+  		
 	},
+
 	create: function(){
 		console.log("In Menu"); //debug message to show we are in menuState
 		menuTheme = game.add.audio('menuTheme');
@@ -36,6 +39,12 @@ var menuState = {
     	game.add.text(game.world.centerX-400, game.world.centerY+100, "Controls: Press SPACE to invert gravity", { font: "42px Arial", fill: "#588c99", align: "center" });
     	game.add.text(game.world.width-550, game.world.height-40, "Game Created by: Dustin Halsey", { font: "32px Arial", fill: "#588c99", align: "center" });
 		game.sound.stopAll();
+		//Scale game to fit screen
+		game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+		game.scale.pageAlignHorizontally = true;
+		game.scale.pageAlignVertically = true;
+		game.scale.setScreenSize(true);
+
 	},
 	update: function(){
 		//starts game if enter
@@ -48,4 +57,3 @@ var menuState = {
 
 	},
 }
-
