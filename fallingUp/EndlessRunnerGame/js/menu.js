@@ -2,7 +2,7 @@
 var menuTheme;
 var mainTheme;
 var clouds;
-
+var waitForFocus = true;
 var loadState = {
 	//loads many of the audios and images before the game begins
 	preload: function(){
@@ -14,7 +14,6 @@ var loadState = {
 		game.load.image('cloud','assets/img/clouds2.png');
 		game.load.image('platform1','assets/img/platform001.png');
 		game.load.spritesheet('player','assets/img/george.png',48,48);
-
 
 	},
 	update: function(){
@@ -45,8 +44,13 @@ var menuState = {
 		game.scale.pageAlignVertically = true;
 		game.scale.setScreenSize(true);
 
+		game.input.onDown.add(unpause, self);
+		pause();
+		//Pause game until focus is brought to game	
+
 	},
 	update: function(){
+
 		//starts game if enter
 		if (game.input.keyboard.isDown(Phaser.Keyboard.ENTER)){
 			menuTheme.stop();
@@ -56,4 +60,14 @@ var menuState = {
 		clouds.tilePosition.x -=1;
 
 	},
+}
+
+function pause(){
+	if(waitForFocus == true){
+		game.paused = true;
+		waitForFocus = false;
+	}
+}
+function unpause(event){
+	game.paused=false;
 }

@@ -14,6 +14,7 @@ var gameOverState = {
     	game.add.text(game.world.centerX-280, game.world.centerY-200,"Game Over \n Your Score was: "+ Math.floor(score), style1);
     	game.add.text(game.world.centerX-300, game.world.centerY+100,"Press ENTER to play again \n Press ESCAPE to exit", style2);
     	game.sound.stopAll();
+        gameOverTheme.volume = 0.4;
 	},
 	update: function(){
 		if (!gameOverTheme.isPlaying) gameOverTheme.play();

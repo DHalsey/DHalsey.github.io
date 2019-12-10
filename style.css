@@ -6,6 +6,8 @@
   --primary: #1a1a1c;
   --secondary: #2b2b2e;
   --lighter: #e1e1e6;
+  --hLink: #ff751a;
+  --hLinkHover: #803300;
 }
 
 /* Dustin */
@@ -19,9 +21,21 @@
 
 .header-text{
   color: var(--lighter);
+  display: inline-block;
 }
 
+a{
+  color: var(--hLink);
+}
 
+a:hover{
+  color: var(--hLinkHover);
+  text-decoration: none;
+}
+
+a:active{
+  color: var(--lighter);
+}
 
 .navbar .navbar-nav {
   text-align: center;
@@ -120,13 +134,16 @@ right: 0;
     height: 100%;
 }
 
-
 /**/
+
 /* Style the Image Used to Trigger the Modal */
 .img-expand {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
 }
 
 .img-expand:hover {opacity: 0.7;}

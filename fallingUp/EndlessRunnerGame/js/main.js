@@ -32,6 +32,9 @@ var mainState = {
 
 		sJump = game.add.audio('sJump');
 		sDie = game.add.audio('sDie');
+		mainTheme.volume = 0.4;
+		sDie.volume = 0.4;
+		sJump.volume = 0.4;
 		sJump.volume = 0.3;
 
 		platforms = game.add.group(); //group to control the platforms
@@ -167,8 +170,6 @@ function init(){
 	nextPattern = 0; //next pattern ID
 	waitPattern = 0; //time untill next pattern
 	score = 0;
-	mainTheme.volume = 1;
-
 }
 
 //creates new platforms patterns
