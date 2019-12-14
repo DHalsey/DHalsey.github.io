@@ -21,9 +21,38 @@ window.onclick = function(event) {
     modal.style.display = "none";
   } 
 }
-span.onclick = function() {
+if(span){span.onclick = function() {
   modal.style.display = "none";
-}
+}}
 
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fade').each( function(){
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight()/4;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).css("opacity", 1);
+                //$(this).css("margin-top", '0px');
+            } else{
+                $(this).css("opacity",0);
+                //$(this).css("margin-top", '100px');
+            }
+        }); 
+    });
+});
 
-//For Phaser
+$(document).ready(function() {
+    $('.fade').each( function(){
+        var bottom_of_element = $(this).offset().top + $(this).outerHeight()/4;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+        if( bottom_of_window > bottom_of_element ){
+            $(this).css("opacity", 1);
+                //$(this).css("margin-top", '0px');
+            } else{
+                $(this).css("opacity",0);
+                //$(this).css("margin-top", '100px');
+            }
+        }); 
+});
