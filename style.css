@@ -49,12 +49,13 @@ a:active{
 
 .navbar .navbar-nav {
   text-align: center;
-  background-color: var(--secondary);
+  background: transparent;
   
 }
 
 .navbar-custom{
   background-color: var(--secondary);
+   background: linear-gradient(126deg, rgba(26,26,28,1) 0%, rgba(47,47,47,1) 65%, rgba(26,26,28,1) 100%);
   border: solid;
   border-color: var(--lighter);
   border-left-width: 0px;
@@ -90,6 +91,7 @@ right: 0;
 
 .home-container{
   background-color: var(--secondary);
+  background: linear-gradient(90deg, rgba(32,32,33,1) 0%, rgba(47,47,47,1) 47%, rgba(47,47,47,1) 74%, rgba(35,35,36,1) 100%);
   margin-bottom: 20px;
   border: solid;
   border-color: var(--lighter);
@@ -101,8 +103,8 @@ right: 0;
 
 .portfolio-container{
   background-color: var(--secondary);
+  background: linear-gradient(90deg, rgba(32,32,33,1) 0%, rgba(47,47,47,1) 47%, rgba(47,47,47,1) 74%, rgba(35,35,36,1) 100%);
   margin-bottom: 20px;
-  border: solid;
   border-color: var(--lighter);
   border-top-width: 3px;
   border-bottom-width: 3px;
