@@ -55,7 +55,9 @@ a:active{
 
 .navbar-custom{
   background-color: var(--secondary);
-   background: linear-gradient(126deg, rgba(26,26,28,1) 0%, rgba(47,47,47,1) 65%, rgba(26,26,28,1) 100%);
+  background: linear-gradient(126deg, rgba(26,26,28,1) 0%, rgba(47,47,47,1) 65%, rgba(26,26,28,1) 100%);
+  font-size: 20px;
+  padding: 0px;
   border: solid;
   border-color: var(--lighter);
   border-left-width: 0px;
