@@ -51,7 +51,7 @@ White-ish: #f9f8fd
 
 
 
-<div class="container home-container" style="">
+<div class="container home-container" style="border:none">
     <div class="row header-text" style="margin-left: 5px;">
         <h1>Welcome!</h1>
     </div>
@@ -112,19 +112,36 @@ White-ish: #f9f8fd
     </div>
 </div>
 
-<div class="container" style="">
-    <div class="row"style = "padding-bottom: 10px">
-        <div class="col">
-            <img class="center-img-column" src="img/icons/icons8-linkedin-104-white.png" width=50px height=50px style="border:none; margin-right: 10%">
+<div class="container" style="max-width:300px">
+    <div class="row"style = "position: relative;">
+        <div class="col" style="text-align: center; transition: transform 0.2s;">
+                <!--div class="center-img-column-background" style="background-image: url(img/icons/icons8-linkedin-104-white.png);"-->
+                <a href="https://www.linkedin.com/feed/">
+                    <img id="iconHyperlink" class="icon-click-background img-responsive" src="img/icons/icons8-linkedin-104-white.png" width=50px height=50px style=" border:none;"> <!--white-->
+                    <img class="icon-click-foreground img-responsive" src="img/icons/icons8-linkedin-104-orange.png" width=50px height=50px style=" border:none;"> <!--orange-->
+                </a>
+                
         </div>
-        <div class="col">
-            <img class="center-img-column" src="img/icons/icons8-itch-io-120-white.png" width=50px height=50px style="border:none; margin-left: 10%">
+        <div class="col" style="text-align: center; transition: transform 0.2s;">
+            <a href="https://ninjacat74.itch.io/">
+                <img id="iconHyperlink" class="icon-click-background img-responsive" src="img/icons/icons8-itch-io-120-white.png" width=50px height=50px style=" border:none;"> <!--white-->
+                <img class="icon-click-foreground img-responsive" src="img/icons/icons8-itch-io-120-orange.png" width=50px height=50px style="border:none;"> <!--orange-->
+            </a>
+            
+        </div>
+        <div class="col" style="text-align: center; transition: transform 0.2s;">
+            <a href="https://github.com/DHalsey">
+                <img id="iconHyperlink" class="icon-click-background img-responsive" src="img/icons/icons8-github-192-white.png" width=50px height=50px style=" border:none;"> <!--white-->
+                <img class="icon-click-foreground img-responsive" src="img/icons/icons8-github-192-orange.png" width=50px height=50px style="border:none;"> <!--orange-->
+            </a>
+            
         </div>
     </div>
 </div>
 
-<div class="container-fluid header-text" style="text-align: center;"> 
+<div class="container-fluid header-text" style="text-align: center; padding-top: 20px;"> 
     Dustin Halsey, Copyright © 2019
 </div>
 </body>
+<script src="js/script.js"></script>
 </html>

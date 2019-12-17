@@ -129,6 +129,18 @@ right: 0;
   border-color: var(--lighter);
 }
 
+.icon-click-foreground{
+  position: absolute;
+  clip-path: circle(00% at center);
+  transform:translate(-100%, 0%);
+  transition: clip-path 0.5s;
+  z-index: 1;
+  pointer-events: none;
+}
+.icon-click-background{
+  z-index: 0;
+}
+
 .video-wrapper{
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
