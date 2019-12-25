@@ -28,7 +28,7 @@ if(span){span.onclick = function() {
 $(document).ready(function() {
     $(window).scroll( function(){
         $('.fade').each( function(){
-            var bottom_of_element = $(this).offset().top + $(window).height()/6; /*+ $(this).outerHeight()/4;*/
+            var bottom_of_element = $(this).offset().top + 5;/*$(window).height()/6;*/ /*+ $(this).outerHeight()/4;*/
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_element ){
@@ -65,3 +65,5 @@ $(".icon-click-background").mouseout(function(){
     $(this).next().css("clip-path", "circle(" + 0 + "% at center)");
     $(this).next().parent().parent().css("transform", "scale(1)");
 });
+
+//Used to fit image to screen
