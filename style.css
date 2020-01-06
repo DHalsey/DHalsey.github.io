@@ -45,6 +45,29 @@ body{
 .header-text{
   color: var(--lighter);
   display: inline-block;
+  font-family: 'Vollkorn', serif;
+  font-family: 'Cairo', sans-serif;
+  /*font-family: 'Cabin', sans-serif;*/
+  font-size: 18px;
+}
+
+.body-text{
+  color: var(--lighter);
+  display: inline-block;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+}
+
+.navbar-text{
+  color: var(--lighter);
+  display: inline-block;
+  font-family: 'Cairo', sans-serif;
+  font-size: 25px;
+}
+
+.text-no-font{
+  color: var(--lighter);
+  display: inline-block;
 }
 
 a{
@@ -58,6 +81,10 @@ a:hover{
 
 a:active{
   color: var(--lighter);
+}
+
+.current-link {
+  color: var(--hLinkHover);
 }
 
 .navbar .navbar-nav {
