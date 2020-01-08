@@ -40,7 +40,7 @@ body{
 
 .start-hidden{
   opacity: 0;
-  --fadein-delay: 1000;
+  --fadein-delay: 0;
   transition: opacity 0.7s ease-in-out;
 }
 /* Header at top of main page */
