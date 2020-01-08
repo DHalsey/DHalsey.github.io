@@ -37,6 +37,12 @@ body{
     opacity: 0;
     transition: opacity 0.7s ease-in-out;
 }
+
+.start-hidden{
+  opacity: 0;
+  --fadein-delay: 1000;
+  transition: opacity 0.7s ease-in-out;
+}
 /* Header at top of main page */
 .header-format{
   background-color: var(--primary);

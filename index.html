@@ -46,20 +46,20 @@ White-ish: #f9f8fd
     </div-->
     <div class="row">
         <div class="col body-text" style="text-align: justify;">
-            <div style="font-size: 45px; font-weight: 500; width: 100%; text-align: center;">Welcome!</div>
-            <p>
+            <div class="start-hidden" style="font-size: 45px; font-weight: 500; width: 100%; text-align: center; --fadein-delay: 300;">Welcome!</div>
+            <p class="start-hidden" style="--fadein-delay: 600;">
                  Welcome to the personal webpage of Dustin Halsey!  I am a computer game deisgner who recently graduated from University of California, Santa Cruz with a Bachelor of Science in "Computer Science: Computer Game Design". Fueled by my lifelong passion towards games, I began developing video games Sophomore year of high school and have been creating games and improving my skills ever since.
             </p>  
-            <p>&nbsp&nbsp&nbsp&nbsp 
+            <p class="start-hidden" style="--fadein-delay: 800;">&nbsp&nbsp&nbsp&nbsp 
                 As a lifelong gamer and a tinkerer at heart, I crave the satisfaction that comes with getting down to the nitty gritty of how things work and using that knowledge to construct something that I can truely call my own. While primarily focusing on the programming side of things, I make it my mission to be well versed in all aspects of the game design process including <a href="sideProjects.html#3DModeling">3D modeling</a>, <a href="sideProjects.html#animation">animation</a>, <a href="sideProjects.html#soundDesign">sound design</a>, and more.
             </p>
-            <p>&nbsp&nbsp&nbsp&nbsp 
+            <p class="start-hidden" style="--fadein-delay: 1000;">&nbsp&nbsp&nbsp&nbsp 
                 Here, you can find my <a href="resume.html">résumé</a> and a <a href="portfolio.html">portfolio</a> of my past projects as well as a collection of <a href="sideProjects.html">side projects</a> i've created for fun.  If you'd like to get in touch, I'd love to <a href="contact/html">chat</a>!
             </p>
         </div>
 
         <div class="col-xl" style=" align-items: center; margin-top: 0px;">
-            <div class="row">
+            <div class="row start-hidden" style="--fadein-delay: 1200;">
                 <div class="container-fluid header-text fit-namebadge" style="padding-left:0px; padding-right: 0px; padding-bottom: 10px; align-items: top; margin-top: 10px; align-content: center; text-align: center; max-width: 470px;">
                     <img src="img/FaceDustinCircle.png" class="img-fluid circle" style = "width: 150px; padding: 10px; padding-bottom: 0px; float: left;"/>
                     <span style="font-family: 'Varela Round', sans-serif; font-size: 48px; line-height: 0.85; margin-top: 50px; display: block; white-space: nowrap;">
@@ -71,7 +71,7 @@ White-ish: #f9f8fd
                     </span>
                 </div>
             </div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="align-content: top;">
+            <div id="carouselExampleIndicators" class="carousel slide start-hidden" data-ride="carousel" style="align-content: top; --fadein-delay: 1500;">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -120,11 +120,11 @@ White-ish: #f9f8fd
 
     
     <div class="col">
-        <div class="container game-title" style="margin-top: 23px;">
+        <div class="container game-title start-hidden" style="margin-top: 23px; --fadein-delay: 1500;">
             <h1>Check out my work!</h1>
         </div>
-        <div class="line-divider" style="margin-bottom: 10px"></div>
-        <div class="video-wrapper" style="padding-bottom: 48.5%;">
+        <div class="line-divider start-hidden" style="margin-bottom: 10px; --fadein-delay: 1600;"></div>
+        <div class="video-wrapper start-hidden" style="padding-bottom: 48.5%; --fadein-delay: 1700">
             <iframe width="100%" src="https://www.youtube.com/embed/7yYyJXu_Yxg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             
         </div>
     </div>
@@ -160,4 +160,5 @@ White-ish: #f9f8fd
 </div>
 </body>
 <script src="js/script.js"></script>
+<script src="js/animateHome.js"></script>
 </html>
