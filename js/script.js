@@ -57,6 +57,33 @@ $(document).ready(function() {
     }); 
 });
 
+
+$(document).ready(function() { 
+    $(window).resize(function() { 
+        $(".fit-namebadge").each(function(){
+            if($(window).width()<=530){
+                var scaleAmount = (1-(1-$(window).width()/530));
+                $(this).css("transform", "scale("+ scaleAmount +")  translate("+ (scaleAmount*100-100)/2 +"%, 0%)");
+                console.log(scaleAmount*110-100);
+            } else{
+               $(this).css("transform", "scale(1)"); 
+            }
+            
+        }); 
+    }); 
+            $(".fit-namebadge").each(function(){
+            if($(window).width()<=530){
+                var scaleAmount = (1-(1-$(window).width()/530));
+                $(this).css("transform", "scale("+ scaleAmount +")  translate("+ (scaleAmount*100-100)/2 +"%, 0%)");
+                console.log(scaleAmount*110-100);
+            } else{
+               $(this).css("transform", "scale(1)"); 
+            }
+            
+        }); 
+}); 
+
+
 $(".icon-click-background").mouseover(function(){
     $(this).next().css("clip-path", "circle(" + 100 + "% at center)");
     $(this).next().parent().parent().css("transform", "scale(1.2)");

@@ -11,7 +11,9 @@
 }
 
 body{
-  background-image: url("img/background2.png");
+
+  background: radial-gradient(circle, rgba(19,18,21,1) 60%, rgba(7,7,8,1) 100%);
+  /*background-image: url("img/background2.png");*/
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -102,8 +104,10 @@ a:active{
   border-color: var(--lighter);
   border-left-width: 0px;
   border-right-width: 0px;
+  border-top-width: 0px;
   text-align: center;
-  box-shadow:0px 6px 5px rgba(0,0,0,0.5);
+  box-shadow:0px 6px 10px rgba(0,0,0,1);
+  
 }
 .navbar-center .inline{
   display:inline-block;

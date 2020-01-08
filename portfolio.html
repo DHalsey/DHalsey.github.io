@@ -15,17 +15,6 @@
 </head>
 <body class="header-format">
 
-<div class="container-fluid header-text" style="padding-left:0px; padding-right: 0px; padding-bottom: 10px">
-    <img src="img/FaceDustinCircle.png" class="img-fluid circle" style = "width: 150px; float:left; padding: 10px; padding-bottom: 0px"/>
-    <p style="font-family: 'Varela Round', sans-serif; font-size: 48px; line-height: 0.95; padding-left: 10px; margin-top: 55px; margin-bottom: 40px;">
-        Dustin Halsey
-        <br>
-        <span style="font-size: 20px; padding-top: 0px; position: absolute;"> Game Programmer / Designer</span>
-    </p>
-</div>
-    
-
-
 <!-- Navigation for the very top of the screen-->
 <div class = "navbar-collapse navbar-custom" >
         <ul class="navbar-nav navbar-center">
@@ -44,11 +33,11 @@
     <h1>Wacktory (C#) - 2019</h1>
 </div>
 
-<div class="container portfolio-container" style=" border-top-width: 3px;">
+<div class="container portfolio-container" style=" border-top-width: 3px;  position: relative; z-index: -1;">
     <div class="row header-text" style="margin-bottom: 30px; text-align: justify; padding-left: 5%; padding-right: 5%;">
 
         <a href="https://www.wacktory.com/"> Wacktory™</a> is a new take on cooperative gameplay that bridges the gap between virtual reality and traditional couch co-op gaming. Thrown into a factory full of chaos and OSHA violations galore, two couch players must work together with their VR counterpart to make cubes and fulfill orders for trucks before time runs out.
-        <br>&nbsp&nbsp&nbsp&nbsp Wacktory was created by us as a capstone project for the Computer Game Design department at the University of California, Santa Cruz.  It was demoed at the <a href="https://sammys.soe.ucsc.edu/home">2019 UCSC Games Showcase</a> where all of the games developed by students at the university over the 2018-2019 academic year were showcased publically across a two day event.  Out of the 50+ games showcased, our game was awared the <a href="https://sammys.soe.ucsc.edu/2019/awards">Grand Prize for "Best Overall Experience"</a> and recognition for top 3 placements for the <a href="https://sammys.soe.ucsc.edu/2019/awards">Peer Choice and Design Innovation awards</a>.
+        <br>&nbsp&nbsp&nbsp&nbsp Wacktory was created by us as a capstone project for the Computer Game Design department at the University of California, Santa Cruz.  It was demoed at the <a href="https://sammys.soe.ucsc.edu/home">2019 UCSC Games Showcase</a> where all student games developed at the university over the 2018-2019 academic year were showcased publically across a two day event.  Out of the 50+ games showcased, our game was awared the <a href="https://sammys.soe.ucsc.edu/2019/awards">Grand Prize for "Best Overall Experience"</a> and recognition for top 3 placements for the <a href="https://sammys.soe.ucsc.edu/2019/awards">Peer Choice and Design Innovation awards</a>.
         <br><br>
         Roles on the project:
         <li> Served as Lead Programmer and Technical Artist for a team of 12, implementing and overseeing the production of core game systems. </li>
@@ -81,7 +70,7 @@
 
 <div class="container portfolio-container" style=" border-top-width: 3px;">
     <div class="row body-text" style="margin-bottom: 30px; text-align: justify; padding-left: 5%; padding-right: 5%;">
-        Alien Invasion is a top-down, rogue-lite shooter where must survive waves of enemies while trying to escape the city.  Built with the <a href="https://phaser.io/">Phaser framework</a> for JavaScript, Alien Invasion offers a fast paced shoot-em-up experience playable directly from your web browser and is available to play below!
+        Alien Invasion is a top-down, rogue-lite shooter where the player must escape the city while by fighting waves of enemies.  Built with the <a href="https://phaser.io/">Phaser framework</a> for JavaScript, Alien Invasion offers a fast paced shoot-em-up experience playable directly in-browser and is available to play below!
         <br>&nbsp&nbsp&nbsp&nbsp Developed as a team of five at UCSC, we were tasked with creating any game whose theme relates to current events.  With the presedential election being the forefront of current events at the start of 2017, Alien Invasion is a satirical illustration of Donald Trump's approach to external affairs, or at least how many citizens perceive his policies.
         <br><br>
         Roles on the project:
@@ -134,6 +123,7 @@
     </div>
 </div>
 </div>
+
 <!--Starcraft 2 AI-->
 <div class="fade">
 <div class="container game-title">
@@ -142,7 +132,7 @@
 <div class="container portfolio-container" style=" border-top-width: 3px;">
     <div class="row body-text" style="margin-bottom: 30px; text-align: justify; padding-left: 5%; padding-right: 5%;">
 
-        Courtesy of Blizzard Entertainment, we utilized <a href="https://github.com/Blizzard/s2client-api">Starcraft II's open API</a> to develop our very own Starcraft II bot.  Using this API, we employed a behavioral tree approach to implementing our AI where our bot would prioritize tasks based upon what it knows about the game state at any given time.  As Starcraft II is a game of imperfect information due to its "fog of war" mechanic for hiding enemy units out of the range of view, we taught our AI to seek out information in real-time to decide wether or not its better to attack, expand, defend, etc.  
+        Courtesy of Blizzard Entertainment, we utilized <a href="https://github.com/Blizzard/s2client-api">Starcraft II's open API</a> to develop our very own Starcraft II bot.  Using this API, we implemented our AI by employing a behavioral tree approach where our bot would prioritize tasks based upon what it knows about the game state at any given time.  As Starcraft II is a game of imperfect information due to its "fog of war" mechanic for hiding enemy units out of the range of view, we taught our AI to seek out information in real-time to decide wether or not its better to attack, expand, defend, etc.  
         <br>&nbsp&nbsp&nbsp&nbsp We set out with the goal of having our AI beat Blizzard's easy bot and focused specifically on having our bot play as the Terran race to do so. In the end, our AI is able to confidently and consistently beat Blizzard's official bots set to medium difficulty.  Our AI works on any map and against any opposing race with the only restriction being our bot must play the Terran race.  Check it out in action below!
         <br><br>
         Roles on the project:
@@ -194,7 +184,7 @@
 <div class="container portfolio-container" style=" border-top-width: 3px;">
     <div class="row body-text" style="margin-bottom: 30px; text-align: justify; padding-left: 5%; padding-right: 5%;">
 
-        Developed with the help of two friends in high school as my first "complete" video game,<a href="https://ninjacat74.itch.io/virus-assault"> Virus Assault </a>is a top-down tower defense game where you play as an IT worker named "Bob" who must protect his system from the infiltrating viruses.  Created for the 2015 <a href="https://www.fbla-pbl.org/about/">Future Business Leaders of America</a> (FBLA for short) Leadership Conference's state competition for the event "Computer Game & Simulation, our team showcased our game live in front of a panel of judges.  Here, we achieved <a href="https://www.cafbla.org/site/handlers/filedownload.ashx?moduleinstanceid=2391&dataid=2597&FileName=2015-SLC-Top-10-Winners.pdf">first place in the state </a> over all the other competing schools.  This qualified us to present at the National Leadership Conference in Chicago where only the top three teams from each state could advance.  Out of the 75 teams who qualified and competed nationally, we placed <a href="https://www.turlockjournal.com/news/education/pitman-students-place-fifth-in-national-fbla-conference/">fifth in the nation</a>.  
+        Developed with the help of two friends in high school as my first "complete" video game,<a href="https://ninjacat74.itch.io/virus-assault"> Virus Assault </a>is a top-down tower defense game where you play as an IT worker named "Bob" who must protect his system from the infiltrating viruses.  Created for the 2015 <a href="https://www.fbla-pbl.org/about/">Future Business Leaders of America</a> Leadership Conference's state competition for the event "Computer Game & Simulation, our team showcased our game live in front of a panel of judges.  Here, we achieved <a href="https://www.cafbla.org/site/handlers/filedownload.ashx?moduleinstanceid=2391&dataid=2597&FileName=2015-SLC-Top-10-Winners.pdf">first place in the state of California</a> over all the other competing schools.  This qualified us to present at the National Leadership Conference in Chicago where only the top three teams from each state could advance.  Out of the 75 teams who qualified and competed nationally, we placed <a href="https://www.turlockjournal.com/news/education/pitman-students-place-fifth-in-national-fbla-conference/">fifth in the nation</a>.  
         <br><br>
         <li>I handled for all of the coding for this project as well as some of the artwork.</li>
     </div>

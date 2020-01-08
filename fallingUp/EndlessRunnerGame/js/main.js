@@ -69,7 +69,7 @@ var mainState = {
 	update: function(){
 		menuTheme.stop();
 		time = game.time.elapsed/1000; //TESTCODE
-		clouds.tilePosition.x -=scrollSpeed/100;
+		clouds.tilePosition.x -=scrollSpeed/300;
 		
 		scoreUpdate(); //constantly runs for debugging
 		jump(); //controls the players jump
