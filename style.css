@@ -64,7 +64,22 @@ body{
   color: var(--lighter);
   display: inline-block;
   font-family: 'Cairo', sans-serif;
-  font-size: 25px;
+  font-size: 10px;
+}
+
+.nav-link{
+  --initialFontSize: 25;
+  transition: font-size 0.5s, line-height 0.5s, background-color 0.5s, border-color 0.5s; 
+  display: block;
+  content: attr(title);
+  /*
+  background: solid;
+  background-color: rgba(128, 51, 0, 0);
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+  border-color: rgba(0,0,0,0); 
+  */
 }
 
 .text-no-font{
@@ -98,7 +113,6 @@ a:active{
 .navbar-custom{
   background-color: var(--secondary);
   background: linear-gradient(126deg, rgba(26,26,28,1) 0%, rgba(47,47,47,1) 65%, rgba(26,26,28,1) 100%);
-  font-size: 20px;
   padding: 0px;
   border: solid;
   border-color: var(--lighter);
@@ -123,6 +137,7 @@ display: inline-block;
 left:  0;
 right: 0;
 }
+
 
 .center{
   margin: auto;
