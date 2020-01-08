@@ -82,25 +82,39 @@ $(document).ready(function() {
 
 $(document).ready(function() { 
     $(".nav-item").each(function(){
-        $(this).css("font-size", parseInt($(this).css("--initialFontSize")) + "px");
+        if($(window).width()>692){ //If we dont wrap, set font size with an ease
+            $(this).css("font-size", parseInt($(this).css("--initialFontSize")) + "px");       
+        } else {
+            console.log("none");
+            $(this).css("transition","font-size 0s, opacity 0.7s ease-in-out, line-height 0.5s, font-size 0.5s, background-color 0.5s, border-color 0.5s");
+            $(this).css("font-size", parseInt($(this).css("--initialFontSize")) + "px");
+            $(this).css("transition","font-size --initialFontSize, opacity 0.7s ease-in-out, line-height 0.5s, font-size 0.5s, background-color 0.5s, border-color 0.5s");
+        }
+        
     });
 });
 
 $(".nav-item").mouseover(function(){
-    $(this).css("line-height", "30px");
-    $(this).css("font-size", parseInt($(this).css("--initialFontSize"))+10 + "px");
+    if($(window).width()>750){
+        $(this).css("line-height", "30px");
+        $(this).css("font-size", parseInt($(this).css("--initialFontSize"))+10 + "px");
+    } else {
+        $(this).css("border-color","rgba(87, 87, 92, 1)");
+        $(this).css("background-color", "rgba(26, 26, 28, 1)");
+    }
+    
     /*
-    $(this).css("border-color","rgba(87, 87, 92, 1)");
-    $(this).css("background-color", "rgba(26, 26, 28, 1)");
+    
     */
 });
 
 $(".nav-item").mouseout(function(){
     $(this).css("line-height", "37px");
     $(this).css("font-size", parseInt($(this).css("--initialFontSize")) + "px");
-    /*
     $(this).css("border-color","rgba(26, 26, 28, 0)");
     $(this).css("background-color", "rgba(87, 87, 92, 0)");
+    /*
+    
     */  
 });
 
