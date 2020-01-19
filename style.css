@@ -107,7 +107,7 @@ a:active{
 }
 
 .current-link {
-  color: var(--hLinkHover);
+  color: #FF5733;
 }
 
 .navbar .navbar-nav {
